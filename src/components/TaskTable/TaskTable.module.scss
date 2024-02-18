@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+
+.task_table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100% - 56px);
+  background-color: $very-pale-blue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  &_wrap {
+    max-width: 1400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid $dark-blue-crayola;
+    border-radius: 20px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_filters {
+    border: 1px solid $blue-teal;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+
+    & > div {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  table {
+    .th {
+      padding: 8px 14px;
+
+      .control {
+        width: 100%;
+        padding-left: 4px;
+        transition: 0.3s ease-in;
+
+        &:hover {
+          background-color: $gainsborough;
+        }
+
+        .icon {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .change_btn {
+      background-color: $green-crayola;
+      color: $white;
+      padding: 7px 14px;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $jade;
+      }
+    }
+  }
+
+  .no_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_text {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+
+      & > p {
+        font-size: 24px;
+        padding-right: 20px;
+      }
+    }
+
+    &_btn {
+      background-color: $twitter-color;
+      color: $white;
+      font-weight: 800;
+      padding: 7px 10px;
+      margin-left: 20px;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: $tiffany;
+      }
+    }
+  }
+}
